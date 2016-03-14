@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://www.mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.core.dao.Operation.IValidCodeDaoOperation">
+
+
+	<select id="getValidCodeByCodeKey" parameterType="String" resultType="ValidCode">
+		select * from validCode where codeKey = #{codeKey}
+	</select>
+
+	<insert id="saveValidCode" parameterType="ValidCode">
+		insert into validCode
+		(codeKey, code, createTime) values(#{codeKey}, #{code}, #{createTime})
+	</insert>
+
+</mapper>
