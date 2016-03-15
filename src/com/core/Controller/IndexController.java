@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
 public class IndexController {
-	private Logger logger = Logger.getLogger(this.getClass());
+	private final static Logger logger = Logger.getLogger(IndexController.class);
 
 	/**
 	 * ½øÈëÊ×Ò³

@@ -20,7 +20,7 @@ import com.google.gson.Gson;
 @RequestMapping("/system/login")
 public class SysLoginController{
 	
-	private Logger logger = Logger.getLogger(this.getClass());
+	private final static Logger logger = Logger.getLogger(SysLoginController.class);
 	
 	@Autowired
 	private UserServiceImpl userService;

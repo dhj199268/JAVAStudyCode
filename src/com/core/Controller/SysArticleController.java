@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 @RequestMapping("/system/article")
 public class SysArticleController {
-	private static Logger logger = Logger.getLogger(SysArticleController.class);
+	private final  static Logger logger = Logger.getLogger(SysArticleController.class);
 
 	/**
 	 * 系统管理员 管理文章
